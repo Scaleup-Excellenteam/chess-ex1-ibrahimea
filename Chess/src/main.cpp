@@ -1,5 +1,5 @@
-#include "Pieces.h"
-#include "Chess.h"
+#include "../include/Piece.h"
+#include "../include/Chess.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -18,7 +18,7 @@ int main()
     // White pieces are lowercase, Black pieces are uppercase.
     // Row 0: white major pieces, row 1: white pawns, rows 2-5: empty,
     // row 6: black pawns, row 7: black major pieces.
-    string board = "rnbqkbnrpppppppp################################PPPPPPPPRNBQKBNR";
+    string board = "RNBQKBNRPPPPPPPP################################pppppppprnbqkbnr";
 
     // Create the Chess object (do not change Chess.h/Chess.cpp).
     Chess a(board);
@@ -82,7 +82,7 @@ int validateMove(const string &boardState, bool isWhiteTurn, const string &move)
 
     // Determine piece color.
     // In this scheme, white is lowercase.
-    bool srcIsWhite = (srcPiece >= 'a' && srcPiece <= 'z');
+    bool srcIsWhite = (srcPiece >= 'A' && srcPiece <= 'Z');
     if (isWhiteTurn && !srcIsWhite)
         return 12;
     if (!isWhiteTurn && srcIsWhite)
@@ -91,7 +91,7 @@ int validateMove(const string &boardState, bool isWhiteTurn, const string &move)
     // Error 13: Destination square already contains a friendly piece.
     if (destPiece != '#' && destPiece != ' ')
     {
-        bool destIsWhite = (destPiece >= 'a' && destPiece <= 'z');
+        bool destIsWhite = (destPiece >= 'A' && destPiece <= 'Z');
         if (isWhiteTurn && destIsWhite)
             return 13;
         if (!isWhiteTurn && !destIsWhite)
