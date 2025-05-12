@@ -14,26 +14,16 @@ int validateMove(const string &boardState, bool isWhiteTurn, const string &move)
 
 int main()
 {
-    // Initial board string (64 characters, row-major order):
-    // White pieces are lowercase, Black pieces are uppercase.
-    // Row 0: white major pieces, row 1: white pawns, rows 2-5: empty,
-    // row 6: black pawns, row 7: black major pieces.
+  
     string board = "RNBQKBNRPPPPPPPP################################pppppppprnbqkbnr";
-
-    // Create the Chess object (do not change Chess.h/Chess.cpp).
     Chess a(board);
-
-    // Maintain a local board copy (64-character string).
     string localBoard = board;
-
-    // isWhiteTurn == true means it is White's turn (white pieces are lowercase).
     bool isWhiteTurn = true;
-
     int codeResponse = 0;
-    string res = a.getInput();  // getInput() handles input and board display.
+    string res = a.getInput(); 
     while (res != "exit")
     {
-        // Validate the move using our polymorphic piece classes.
+
         codeResponse = validateMove(localBoard, isWhiteTurn, res);
         cout << "code response computed: " << codeResponse << endl;
 
@@ -88,7 +78,6 @@ int validateMove(const string &boardState, bool isWhiteTurn, const string &move)
     if (!isWhiteTurn && srcIsWhite)
         return 12;
 
-    // Error 13: Destination square already contains a friendly piece.
     if (destPiece != '#' && destPiece != ' ')
     {
         bool destIsWhite = (destPiece >= 'A' && destPiece <= 'Z');
@@ -98,7 +87,7 @@ int validateMove(const string &boardState, bool isWhiteTurn, const string &move)
             return 13;
     }
 
-    // Create the appropriate piece validator using our factory.
+
     Piece *piece = createPiece(srcPiece);
     if (piece == nullptr)
         return 21; // Unknown piece.
