@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_move_validation.dir/link.d CMakeFiles/test_move_validation.dir/test_move_validation.cpp.o CMakeFiles/test_move_validation.dir/__/src/Piece.cpp.o -o test_move_validation
