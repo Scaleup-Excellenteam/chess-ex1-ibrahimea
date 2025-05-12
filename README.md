@@ -118,7 +118,7 @@ mkdir -p build
 cd build
 cmake ..
 make
-./Chess/src/Chess
+./Chess 
 ```
 
 Any project that does not compile properly using these steps will not be graded.
