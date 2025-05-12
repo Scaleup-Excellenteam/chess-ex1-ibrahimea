@@ -1,0 +1,10 @@
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/CMakeFiles/edit_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/CMakeFiles/rebuild_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/src/CMakeFiles/Chess.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/src/CMakeFiles/edit_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/src/CMakeFiles/rebuild_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/include/CMakeFiles/edit_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/include/CMakeFiles/rebuild_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/tests/CMakeFiles/test_move_validation.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/tests/CMakeFiles/edit_cache.dir
+/home/ebraheem/CLionProjects/chess-ex1-ibrahimea/build/Chess/tests/CMakeFiles/rebuild_cache.dir
