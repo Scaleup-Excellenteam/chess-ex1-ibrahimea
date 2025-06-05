@@ -1,3 +1,0 @@
-/home/ebraheem/CLionProjects/untitled30/build/CMakeFiles/ChessEngine.dir
-/home/ebraheem/CLionProjects/untitled30/build/CMakeFiles/edit_cache.dir
-/home/ebraheem/CLionProjects/untitled30/build/CMakeFiles/rebuild_cache.dir
